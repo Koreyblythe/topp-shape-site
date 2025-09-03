@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
   }
 
-  // Mailto contact (edit the email address below)
+  // Mailto contact
   const form = document.querySelector('#contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const interest = form.querySelector('#interest')?.value || 'general';
       const message = form.querySelector('#message')?.value || '';
 
-      const to = 'info@toppshape.fit'; // TODO: change to Trey’s real email
+      const to = 'toppshape1332@gmail.com'; // Trey’s email
       const subject = encodeURIComponent(`Topp Shape Inquiry – ${interest}`);
       const body = encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nInterest: ${interest}\n\nMessage:\n${message}\n\n— Sent from toppshape.fit`
