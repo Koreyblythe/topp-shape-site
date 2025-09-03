@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing — Topp Shape</title>
+  <meta name="description" content="Membership and drop-in pricing for Topp Shape." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html"><img src="logo.png" class="brand-logo" alt="Topp Shape" /><span>Topp Shape</span></a>
+    <nav class="nav" data-nav>
+      <a href="index.html">Home</a><a href="programs.html">Programs</a><a href="coaches.html">Coaches</a><a href="schedule.html">Schedule</a><a href="pricing.html" aria-current="page">Pricing</a><a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Pricing</div>
+      <h1>Simple, flexible membership.</h1>
+      <p class="muted">No hidden fees. Free week to try us out.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-3">
+      <div class="surface card">
+        <h3>Monthly</h3>
+        <p class="muted">Unlimited classes</p>
+        <h2>$<span>XX</span>/mo</h2>
+        <div class="btn-row" style="margin-top:10px"><a class="btn btn--primary" href="contact.html">Start Free Week</a></div>
+      </div>
+      <div class="surface card">
+        <h3>Drop-In</h3>
+        <p class="muted">Visiting or testing the waters</p>
+        <h2>$<span>XX</span></h2>
+        <div class="btn-row" style="margin-top:10px"><a class="btn btn--outline" href="contact.html">Drop In</a></div>
+      </div>
+      <div class="surface card">
+        <h3>10-Visit Punch</h3>
+        <p class="muted">Flexible training</p>
+        <h2>$<span>XX</span></h2>
+        <div class="btn-row" style="margin-top:10px"><a class="btn btn--outline" href="contact.html">Get Started</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="muted">© <span id="year"></span> Topp Shape</div>
+    <div class="footer-nav">
+      <a href="programs.html">Programs</a><a href="coaches.html">Coaches</a><a href="schedule.html">Schedule</a><a href="pricing.html" aria-current="page">Pricing</a><a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
