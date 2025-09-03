@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coaches — Topp Shape</title>
-  <meta name="description" content="Meet the coaches at Topp Shape." />
+  <title>Contact — Topp Shape</title>
+  <meta name="description" content="Contact Topp Shape to start your free week or ask questions." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="logo-mark.png" />
 </head>
@@ -15,10 +15,10 @@
     <nav class="nav" data-nav>
       <a href="index.html">Home</a>
       <a href="programs.html">Programs</a>
-      <a href="coaches.html" aria-current="page">Coaches</a>
+      <a href="coaches.html">Coaches</a>
       <a href="athletes.html">Athletes</a>
       <a href="schedule.html">Schedule</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </nav>
     <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
   </div>
@@ -27,46 +27,44 @@
 <main>
   <section class="hero">
     <div class="container">
-      <div class="eyebrow">Coaches</div>
-      <h1>Real coaches. Real results.</h1>
-      <p class="muted">Form-focused, friendly, and invested in your progress.</p>
+      <div class="eyebrow">Contact</div>
+      <h1>Start your free week.</h1>
+      <p class="muted">Tell us what you’re interested in and we’ll follow up.</p>
     </div>
   </section>
 
   <section class="section">
-    <div class="container coach-grid">
-      <!-- Trey -->
-      <article class="surface card coach">
-        <div class="tag">Owner · CPT</div>
-        <h3>Trey Topp</h3>
-        <div class="meta">@topp95</div>
-        <p>
-          Owner of Topp Shape Fitness, Certified Personal Trainer, and Nutrition &amp; Movement Specialist.
-          Trey helps clients unlock their full potential through smart training, effective nutrition, and
-          movement strategies that keep the body performing at its best. His approach builds lasting strength,
-          confidence, and results you can count on.
-        </p>
-        <div class="links">
-          <a href="https://instagram.com/topp95" target="_blank" rel="noopener">Instagram</a>
-          <a href="mailto:toppshape1332@gmail.com">Email</a>
+    <div class="container">
+      <form id="contact-form" class="surface card">
+        <div><label for="name"><strong>Name</strong></label><input id="name" name="name" required /></div>
+        <div><label for="email"><strong>Email</strong></label><input id="email" type="email" name="email" required /></div>
+        <div><label for="phone"><strong>Phone (optional)</strong></label><input id="phone" name="phone" /></div>
+        <div>
+          <label for="interest"><strong>I'm interested in</strong></label>
+          <select id="interest" name="interest">
+            <option value="membership">Membership</option>
+            <option value="drop-in">Drop-In</option>
+            <option value="personal-training">Personal Training</option>
+            <option value="general">General Question</option>
+          </select>
         </div>
-      </article>
+        <div><label for="message"><strong>Message</strong></label><textarea id="message" name="message" required></textarea></div>
+        <div class="btn-row" style="margin-top:10px">
+          <button class="btn btn--primary" type="submit">Send</button>
+          <a class="btn btn--outline" href="index.html">Back to Home</a>
+        </div>
+      </form>
+    </div>
+  </section>
 
-      <!-- Morgan -->
-      <article class="surface card coach">
-        <div class="tag">Women’s Training Specialist</div>
-        <h3>Morgan Boucher</h3>
-        <div class="meta">@morganb.fit_</div>
-        <p>
-          Morgan offers both personal training and group sessions. Known for building confidence and strength,
-          her clients rave about her ability to push them while keeping workouts approachable and fun. Whether
-          one-on-one or in women’s group classes, she empowers clients to feel stronger every day.
-        </p>
-        <div class="links">
-          <a href="https://instagram.com/morganb.fit_" target="_blank" rel="noopener">Instagram</a>
-          <a href="mailto:toppshape1332@gmail.com">Email</a>
-        </div>
-      </article>
+  <section class="section">
+    <div class="container surface card">
+      <h2>Direct contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:toppshape1332@gmail.com">toppshape1332@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:16189674755">(618) 967-4755</a></p>
+      <p><strong>Address:</strong> 222 N 11th St, Murphysboro, IL 62966</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/toppshapefit" target="_blank" rel="noopener">@toppshapefit</a></p>
+      <p><strong>Facebook:</strong> <a href="https://facebook.com/ToppShapeFitness" target="_blank" rel="noopener">Topp Shape Fitness</a></p>
     </div>
   </section>
 </main>
@@ -76,10 +74,10 @@
     <div class="muted">© <span id="year"></span> Topp Shape</div>
     <div class="footer-nav">
       <a href="programs.html">Programs</a>
-      <a href="coaches.html" aria-current="page">Coaches</a>
+      <a href="coaches.html">Coaches</a>
       <a href="athletes.html">Athletes</a>
       <a href="schedule.html">Schedule</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </div>
   </div>
 </footer>
