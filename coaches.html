@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coaches — Topp Shape</title>
+  <meta name="description" content="Meet the coaches at Topp Shape." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html"><img src="logo.png" class="brand-logo" alt="Topp Shape" /><span>Topp Shape</span></a>
+    <nav class="nav" data-nav>
+      <a href="index.html">Home</a><a href="programs.html">Programs</a><a href="coaches.html" aria-current="page">Coaches</a><a href="schedule.html">Schedule</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Coaches</div>
+      <h1>Real coaches. Real results.</h1>
+      <p class="muted">Form-focused, friendly, and invested in your progress.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-3">
+      <div class="surface card">
+        <h3>Coach Name</h3>
+        <p class="muted">CPT, CPR/AED</p>
+        <p>Specialties: strength foundations, fat loss, beginner technique.</p>
+      </div>
+      <div class="surface card">
+        <h3>Coach Name</h3>
+        <p class="muted">CSCS, USAW-1</p>
+        <p>Specialties: athletic development, weightlifting, mobility.</p>
+      </div>
+      <div class="surface card">
+        <h3>Coach Name</h3>
+        <p class="muted">CPT</p>
+        <p>Specialties: conditioning, kettlebells, accountability.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="muted">© <span id="year"></span> Topp Shape</div>
+    <div class="footer-nav">
+      <a href="programs.html">Programs</a><a href="coaches.html" aria-current="page">Coaches</a><a href="schedule.html">Schedule</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
