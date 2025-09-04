@@ -1,59 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Athletes — Topp Shape</title>
-  <meta name="description" content="Topp Shape Athletes — coming soon." />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo-mark.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athletes - Topp Shape Fitness</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container navbar">
-    <a class="brand" href="index.html"><img src="logo-mark.png" class="brand-logo" alt="Topp Shape" /><span>Topp Shape</span></a>
-    <nav class="nav" data-nav>
-      <a href="index.html">Home</a>
-      <a href="programs.html">Programs</a>
-      <a href="coaches.html">Coaches</a>
-      <a href="athletes.html" aria-current="page">Athletes</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <img src="logo-mark.png" alt="Topp Shape Logo" class="brand-logo">
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="athletes.html" class="active">Athletes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-  <section class="coming-hero">
-    <div class="container">
-      <img src="logo-mark.png" alt="" style="width:60px;height:60px;margin:0 auto 14px;opacity:.9" />
-      <h1>Athletes Program</h1>
-      <p class="muted" style="max-width:640px;margin:10px auto 0">
-        We’re signing athletes soon—performance training designed for strength, speed, and resilience.
-      </p>
-      <div class="pulse">Coming soon</div>
-      <div class="btn-row" style="justify-content:center;margin-top:14px">
-        <a class="btn btn--primary" href="contact.html">Join Waitlist</a>
-        <a class="btn btn--outline" href="index.html">Back to Home</a>
-      </div>
+  <section class="page-hero">
+    <h1>Our Athletes</h1>
+  </section>
+
+  <section class="container">
+    <div class="coming-soon">
+      <h2>Coming Soon</h2>
+      <p>We’re excited to announce our roster of athletes. Stay tuned.</p>
     </div>
   </section>
-</main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="muted">© <span id="year"></span> Topp Shape</div>
-    <div class="footer-nav">
-      <a href="programs.html">Programs</a>
-      <a href="coaches.html">Coaches</a>
-      <a href="athletes.html" aria-current="page">Athletes</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</footer>
-<script src="script.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  <footer class="site-footer">
+    <p>&copy; 2025 Topp Shape Fitness</p>
+  </footer>
 </body>
 </html>
