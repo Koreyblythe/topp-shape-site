@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programs - Topp Shape Fitness</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programs — Topp Shape</title>
+  <meta name="description" content="Group classes, athlete-specific training, and 1-on-1 personal training at Topp Shape." />
+  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="icon" href="logo-mark.png" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="brand">
-        <img src="logo-mark.png" alt="Topp Shape Logo" class="brand-logo">
-      </a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="programs.html" class="active">Programs</a>
-        <a href="coaches.html">Coaches</a>
-        <a href="athletes.html">Athletes</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html"><img src="logo-mark.png" class="brand-logo" alt="Topp Shape" /><span>Topp Shape</span></a>
+    <nav class="nav" data-nav>
+      <a href="index.html">Home</a>
+      <a href="programs.html" aria-current="page">Programs</a>
+      <a href="coaches.html">Coaches</a>
+      <a href="athletes.html">Athletes</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
+  </div>
+</header>
 
-  <section class="page-hero">
-    <h1>Our Programs</h1>
-  </section>
-
-  <section class="programs container">
-    <div class="program-card">
-      <h3>Group Classes</h3>
-      <p>Dynamic sessions designed to challenge and motivate with community energy.</p>
-    </div>
-    <div class="program-card">
-      <h3>Athlete Specific Training</h3>
-      <p>Performance-driven training plans tailored for athletes at all levels.</p>
-    </div>
-    <div class="program-card">
-      <h3>1-on-1 Personal Training</h3>
-      <p>Focused sessions with our coaches to help you reach your personal best.</p>
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Programs</div>
+      <h1>Built for results—not trends.</h1>
+      <p class="muted">
+        Topp Shape isn’t just a traditional gym—it’s a fitness center for those serious about personal health and growth.
+      </p>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Topp Shape Fitness</p>
-  </footer>
+  <section class="section">
+    <div class="container grid grid-3">
+      <div class="surface card">
+        <h2>Group Classes</h2>
+        <p class="muted">Dynamic, coached sessions with community energy. Strength, conditioning, and movement quality blended into a weekly flow.</p>
+      </div>
+      <div class="surface card">
+        <h2>Athlete-Specific Training</h2>
+        <p class="muted">Performance-driven development: strength, speed, agility, and resilience tailored to your sport and season.</p>
+      </div>
+      <div class="surface card">
+        <h2>1-on-1 Personal Training</h2>
+        <p class="muted">Customized coaching for your goals and schedule with accountability you can count on.</p>
+        <div class="btn-row" style="margin-top:10px"><a class="btn btn--primary" href="contact.html">Book a Consult</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="muted">© <span id="year"></span> Topp Shape</div>
+    <div class="footer-nav">
+      <a href="programs.html" aria-current="page">Programs</a>
+      <a href="coaches.html">Coaches</a>
+      <a href="athletes.html">Athletes</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
 </html>
