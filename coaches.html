@@ -1,89 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coaches — Topp Shape</title>
-  <meta name="description" content="Meet the coaches at Topp Shape." />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo-mark.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coaches - Topp Shape Fitness</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container navbar">
-    <a class="brand" href="index.html"><img src="logo-mark.png" class="brand-logo" alt="Topp Shape" /><span>Topp Shape</span></a>
-    <nav class="nav" data-nav>
-      <a href="index.html">Home</a>
-      <a href="programs.html">Programs</a>
-      <a href="coaches.html" aria-current="page">Coaches</a>
-      <a href="athletes.html">Athletes</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <img src="Treys logo.PNG" alt="Topp Shape Logo" class="brand-logo">
+        <span>Topp Shape Fitness</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="coaches.html" aria-current="page">Coaches</a>
+        <a href="athletes.html">Athletes</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-  <section class="hero">
+  <main class="section">
     <div class="container">
-      <div class="eyebrow">Coaches</div>
-      <h1>Real coaches. Real results.</h1>
-      <p class="muted">Form-focused, friendly, and invested in your progress.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container coach-grid">
-      <!-- Trey -->
-      <article class="surface card coach">
-        <div class="tag">Owner · CPT</div>
-        <h3>Trey Topp</h3>
-        <div class="meta">@topp95</div>
-        <p>
-          Owner of Topp Shape Fitness, Certified Personal Trainer, and Nutrition &amp; Movement Specialist.
-          Trey helps clients unlock their full potential through smart training, effective nutrition, and
-          movement strategies that keep the body performing at its best. His approach builds lasting strength,
-          confidence, and results you can count on.
-        </p>
-        <div class="links">
-          <a href="https://instagram.com/topp95" target="_blank" rel="noopener">Instagram</a>
-          <a href="mailto:toppshape1332@gmail.com">Email</a>
+      <h1>Meet Our Coaches</h1>
+      <div class="coach-grid">
+        
+        <div class="coach card">
+          <img src="coach-trey.jpg" alt="Trey Topp" class="coach-photo">
+          <h3>Trey Topp</h3>
+          <p class="meta">@topp95</p>
+          <p>Owner of Topp Shape Fitness, Certified Personal Trainer, and Nutrition & Movement Specialist. Trey is dedicated to helping clients unlock their full potential through smart training, effective nutrition, and strategies that keep the body performing at its best.</p>
         </div>
-      </article>
 
-      <!-- Morgan -->
-      <article class="surface card coach">
-        <div class="tag">Women’s Training Specialist</div>
-        <h3>Morgan Boucher</h3>
-        <div class="meta">@morganb.fit_</div>
-        <p>
-          Morgan offers both personal training and group sessions. Known for building confidence and strength,
-          her clients rave about her ability to push them while keeping workouts approachable and fun. Whether
-          one-on-one or in women’s group classes, she empowers clients to feel stronger every day.
-        </p>
-        <div class="links">
-          <a href="https://instagram.com/morganb.fit_" target="_blank" rel="noopener">Instagram</a>
-          <a href="mailto:toppshape1332@gmail.com">Email</a>
+        <div class="coach card">
+          <img src="coach-morgan.jpg" alt="Morgan Boucher" class="coach-photo">
+          <h3>Morgan Boucher</h3>
+          <p class="meta">@morganb.fit_</p>
+          <p>Women’s Training Specialist offering both personal training and group sessions. Morgan is known for building confidence and strength while making workouts approachable and fun. Her clients rave about her ability to push them while keeping fitness exciting.</p>
         </div>
-      </article>
-    </div>
-  </section>
-</main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="muted">© <span id="year"></span> Topp Shape</div>
-    <div class="footer-nav">
-      <a href="programs.html">Programs</a>
-      <a href="coaches.html" aria-current="page">Coaches</a>
-      <a href="athletes.html">Athletes</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="contact.html">Contact</a>
+      </div>
     </div>
-  </div>
-</footer>
-<script src="script.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Topp Shape Fitness</p>
+    </div>
+  </footer>
 </body>
 </html>
