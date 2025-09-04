@@ -1,59 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Topp Shape Fitness</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="logo-mark.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Topp Shape — Stronger Every Day</title>
+  <meta name="description" content="Topp Shape: coached strength and conditioning with group classes, athlete training, and personal sessions." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo-mark.png" />
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="brand">
-        <img src="logo-mark.png" alt="Topp Shape Logo" class="brand-logo">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <img src="logo-mark.png" alt="Topp Shape" class="brand-logo" />
+        <span>Topp Shape</span>
       </a>
-      <nav class="nav">
-        <a href="index.html" class="active">Home</a>
+      <nav class="nav" data-nav>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="programs.html">Programs</a>
         <a href="coaches.html">Coaches</a>
         <a href="athletes.html">Athletes</a>
+        <a href="schedule.html">Schedule</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
     </div>
   </header>
 
-  <section class="hero hero--photo">
-    <div class="container">
-      <h1>Stronger Every Day</h1>
-      <p>Topp Shape isn’t just a traditional gym. We’re a fitness center for those serious about personal health and growth.</p>
-      <div class="cta-buttons">
-        <a href="programs.html" class="btn">Explore Programs</a>
-        <a href="contact.html" class="btn btn-outline">Join Now</a>
+  <main>
+    <!-- Hero with wordmark over photo -->
+    <section class="hero hero--photo">
+      <div class="container">
+        <div class="eyebrow">Topp Shape</div>
+        <img src="logo-wordmark.jpg"
+             alt="Topp Shape Fitness"
+             style="max-width:320px;margin:10px 0 6px;filter:drop-shadow(0 6px 24px rgba(0,0,0,.35));" />
+        <h1>Stronger Every Day.</h1>
+        <p class="muted">
+          Coached strength and conditioning for real people. Clean facility, smart programming, proven results.
+        </p>
+        <div class="btn-row" style="margin-top:10px">
+          <a class="btn btn--primary" href="contact.html">Start Your Free Week</a>
+          <a class="btn btn--outline" href="schedule.html">See Schedule</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three feature cards -->
+    <section class="section">
+      <div class="container grid grid-3">
+        <div class="surface card">
+          <h3>Certified Coaching</h3>
+          <p class="muted">Technique-first guidance that scales to your level.</p>
+          <div class="feature-list" style="margin-top:8px">
+            <div class="feature"><span class="dot"></span><span>Strength &amp; conditioning</span></div>
+            <div class="feature"><span class="dot"></span><span>Personal training</span></div>
+            <div class="feature"><span class="dot"></span><span>Nutrition basics</span></div>
+          </div>
+        </div>
+        <div class="surface card">
+          <h3>Proven Programming</h3>
+          <p class="muted">Balanced weekly split for strength, conditioning, and recovery.</p>
+        </div>
+        <div class="surface card">
+          <h3>Clean Facility</h3>
+          <p class="muted">Respectful community, quality equipment, and clear standards.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="muted">© <span id="year"></span> Topp Shape</div>
+      <div class="footer-nav">
+        <a href="programs.html">Programs</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="athletes.html">Athletes</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
-  </section>
-
-  <section class="features container">
-    <div class="feature">
-      <img src="gym-1.jpg" alt="Gym view">
-      <h3>Community</h3>
-      <p>A supportive environment for athletes and individuals pushing for progress.</p>
-    </div>
-    <div class="feature">
-      <img src="gym-2.jpg" alt="Equipment">
-      <h3>Equipment</h3>
-      <p>Everything from racks to ropes to help you build strength and endurance.</p>
-    </div>
-    <div class="feature">
-      <img src="gym-3.jpg" alt="Battle ropes">
-      <h3>Performance</h3>
-      <p>Focused training strategies designed for lasting growth and results.</p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Topp Shape Fitness</p>
   </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
 </body>
 </html>
