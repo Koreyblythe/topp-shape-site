@@ -258,3 +258,17 @@ p { margin: 0 0 12px; }
   color: var(--muted);
   margin-top: 10px;
 }
+/* LINKS */
+a {
+  color: #e4e2dd;        /* light gray from brand */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffffff;        /* white on hover */
+}
+
+a:visited {
+  color: #e4e2dd;        /* force same as normal */
+}
