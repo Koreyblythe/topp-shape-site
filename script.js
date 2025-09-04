@@ -1,4 +1,4 @@
-// ===== Topp Shape — Global JS =====
+// Mobile nav toggle + contact mailto
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('[data-nav-toggle]');
   const nav = document.querySelector('[data-nav]');
@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
   }
 
-  // Mailto contact
   const form = document.querySelector('#contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
@@ -17,8 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const phone = form.querySelector('#phone')?.value || '';
       const interest = form.querySelector('#interest')?.value || 'general';
       const message = form.querySelector('#message')?.value || '';
-
-      const to = 'toppshape1332@gmail.com'; // Trey’s email
+      const to = 'toppshape1332@gmail.com';
       const subject = encodeURIComponent(`Topp Shape Inquiry – ${interest}`);
       const body = encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nInterest: ${interest}\n\nMessage:\n${message}\n\n— Sent from toppshape.fit`
