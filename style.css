@@ -112,3 +112,20 @@ h3{font-size:20px}
 a{color:#e4e2dd}
 a:hover{color:#ffffff}
 a:visited{color:#e4e2dd}
+/* Pricing & Checks */
+.price .price-tag{font-size:34px;font-weight:800;margin:6px 0}
+.price .price-tag .small{font-size:.6em;color:var(--muted)}
+.price .price-grid{display:grid;gap:8px;margin:8px 0}
+.price .price-grid div{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border:1px solid rgba(255,255,255,.08);border-radius:10px}
+.checks{list-style:none;margin:10px 0 12px 0;padding:0;display:grid;gap:6px}
+.checks li{position:relative;padding-left:22px}
+.checks li::before{content:"✓";position:absolute;left:0;top:0;color:#fff}
+
+/* Badges / dividers */
+.badge{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:999px;background:rgba(255,255,255,.12);font-weight:800;margin-bottom:8px}
+.divider{height:1px;background:rgba(255,255,255,.12);margin:14px 0}
+
+/* Forms */
+label{display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.16);background:#1f2123;color:#fff}
+textarea{min-height:120px;resize:vertical}
