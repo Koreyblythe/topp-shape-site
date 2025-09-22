@@ -6,7 +6,7 @@ img{max-width:100%;display:block}
 button{font:inherit}
 a{text-decoration:none}
 
-/* ===== Theme (charcoal) ===== */
+/* ===== Theme ===== */
 :root{
   --bg:#323436;
   --surface:#27292b;
@@ -23,8 +23,6 @@ h1{font-size:clamp(40px,6vw,56px);line-height:1.1}
 h2{font-size:clamp(26px,3.6vw,34px)}
 h3{font-size:20px}
 .muted{color:var(--muted)}
-
-/* Layout */
 .container{max-width:var(--maxw);margin:0 auto;padding:24px}
 .section{padding:32px 0}
 .surface{background:var(--surface);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);box-shadow:var(--shadow)}
@@ -34,11 +32,13 @@ h3{font-size:20px}
 @media (max-width:900px){.grid-3{grid-template-columns:1fr 1fr}}
 @media (max-width:680px){.grid-3{grid-template-columns:1fr}}
 
-/* Header */
+/* ===== Header / Nav (mobile fix) ===== */
 .site-header{position:sticky;top:0;z-index:1000;background:rgba(20,21,22,.7);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
-.navbar{display:flex;justify-content:space-between;align-items:center}
+.navbar{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--ink)}
 .brand-logo{width:36px;height:36px;object-fit:contain}
+.brand span{display:none}
+@media (min-width:560px){.brand span{display:inline}}
 .nav{display:flex;gap:18px}
 .nav a{padding:10px 12px;border-radius:10px;font-weight:600;color:var(--ink)}
 .nav a[aria-current="page"]{background:rgba(255,255,255,.08)}
@@ -49,26 +49,19 @@ h3{font-size:20px}
 .burger span::before{top:-6px}.burger span::after{top:6px}
 @media (max-width:880px){
   .burger{display:block}
-  .nav{position:fixed;inset:64px 16px auto 16px;background:var(--surface);border-radius:12px;box-shadow:var(--shadow);padding:14px;flex-direction:column;display:none}
+  .nav{position:fixed;left:16px;right:16px;top:68px;background:var(--surface);border-radius:12px;box-shadow:var(--shadow);padding:14px;flex-direction:column;display:none}
   .nav.open{display:flex}
 }
 
-/* Hero */
+/* ===== Hero ===== */
 .hero{padding:64px 0;text-align:left}
-.hero .eyebrow{text-transform:uppercase;font-size:12px;letter-spacing:.2em;color:#d7dbe0;font-weight:800}
+.eyebrow{text-transform:uppercase;font-size:12px;letter-spacing:.2em;color:#d7dbe0;font-weight:800}
 .wordmark{max-width:320px;margin:10px 0 6px;filter:drop-shadow(0 6px 24px rgba(0,0,0,.35))}
-
-/* Hero background (shirt) */
-.hero--photo{
-  position:relative;
-  padding:96px 0;
-  background: url('hero-shirt.jpg') center/cover no-repeat;
-  color:#fff;
-}
+.hero--photo{position:relative;padding:96px 0;background:url('hero-shirt.jpg') center/cover no-repeat;color:#fff}
 .hero--photo::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.45))}
 .hero--photo .container{position:relative;z-index:1}
 
-/* Buttons */
+/* ===== Buttons ===== */
 .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;border:2px solid transparent;font-weight:700;cursor:pointer;transition:.2s}
 .btn--primary{background:#fff;color:#111}
 .btn--primary:hover{transform:translateY(-1px);filter:brightness(.95)}
@@ -76,17 +69,19 @@ h3{font-size:20px}
 .btn--outline:hover{background:#fff;color:#111}
 .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
 
-/* Feature list */
+/* ===== Lists / tables ===== */
 .feature-list{display:grid;gap:8px;margin-top:8px}
 .feature{display:flex;gap:10px}
 .dot{width:10px;height:10px;border-radius:50%;background:#fff;margin-top:8px}
-
-/* Table */
 .table{width:100%;border-collapse:collapse;background:var(--surface);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);color:var(--ink)}
 .table th,.table td{padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left}
 .table thead th{background:rgba(255,255,255,.06);font-weight:800}
 
-/* Coaches */
+/* ===== Pricing (hide numbers) ===== */
+.price .price-tag,
+.price .price-grid { display:none; }
+
+/* ===== Coaches ===== */
 .coach-grid{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (max-width:680px){.coach-grid{grid-template-columns:1fr}}
 .coach{display:flex;flex-direction:column;gap:10px}
@@ -97,35 +92,26 @@ h3{font-size:20px}
 .coach .links a{color:#fff;text-decoration:underline;text-underline-offset:2px}
 .coach .links a:hover{opacity:.9}
 .coach-photo{width:100%;border-radius:10px;object-fit:cover;max-height:360px;margin-bottom:10px}
+.coach-photo.trey{object-position:top} /* Trey crop fix */
 
-/* Coming soon */
-.coming-hero{padding:120px 0;text-align:center}
-.coming-hero h1{font-size:clamp(42px,7vw,64px)}
-.coming-hero .pulse{display:inline-block;padding:10px 14px;border:1px solid rgba(255,255,255,.18);border-radius:999px;color:var(--muted);margin-top:10px}
+/* ===== Badges / Checks / Dividers (Blueprint & Programs) ===== */
+.checks{list-style:none;margin:10px 0 12px 0;padding:0;display:grid;gap:6px}
+.checks li{position:relative;padding-left:22px}
+.checks li::before{content:"✓";position:absolute;left:0;top:0;color:#fff}
+.badge{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:999px;background:rgba(255,255,255,.12);font-weight:800;margin-bottom:8px}
+.divider{height:1px;background:rgba(255,255,255,.12);margin:14px 0}
 
-/* Footer */
+/* ===== Forms ===== */
+label{display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.16);background:#1f2123;color:#fff}
+textarea{min-height:120px;resize:vertical}
+
+/* ===== Footer ===== */
 .site-footer{padding:42px 0;color:var(--muted)}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 .footer-nav{display:flex;gap:14px}
 
-/* Links (no blue/purple) */
+/* ===== Links (no blue/purple) ===== */
 a{color:#e4e2dd}
 a:hover{color:#ffffff}
 a:visited{color:#e4e2dd}
-/* Pricing & Checks */
-.price .price-tag{font-size:34px;font-weight:800;margin:6px 0}
-.price .price-tag .small{font-size:.6em;color:var(--muted)}
-.price .price-grid{display:grid;gap:8px;margin:8px 0}
-.price .price-grid div{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border:1px solid rgba(255,255,255,.08);border-radius:10px}
-.checks{list-style:none;margin:10px 0 12px 0;padding:0;display:grid;gap:6px}
-.checks li{position:relative;padding-left:22px}
-.checks li::before{content:"✓";position:absolute;left:0;top:0;color:#fff}
-
-/* Badges / dividers */
-.badge{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:999px;background:rgba(255,255,255,.12);font-weight:800;margin-bottom:8px}
-.divider{height:1px;background:rgba(255,255,255,.12);margin:14px 0}
-
-/* Forms */
-label{display:block;margin-bottom:6px}
-input,select,textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.16);background:#1f2123;color:#fff}
-textarea{min-height:120px;resize:vertical}
