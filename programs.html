@@ -5,110 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Programs — Topp Shape</title>
   <meta name="description" content="Group classes, athlete training, 1-on-1 personal training, and online coaching." />
-  <link rel="stylesheet" href="style.css?v=6" />
+  <link rel="stylesheet" href="style.css?v=7" />
   <link rel="icon" href="logo-mark.png" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container navbar">
-    <a class="brand" href="index.html"><img src="logo-mark.png" class="brand-logo" alt="Topp Shape"/><span>Topp Shape</span></a>
-    <nav class="nav" data-nav>
-      <a href="index.html">Home</a>
-      <a href="programs.html" aria-current="page">Programs</a>
-      <a href="coaches.html">Coaches</a>
-      <a href="athletes.html">Athletes</a>
-      <a href="blueprint.html">Blueprint</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
-  </div>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="container">
-      <div class="eyebrow">Programs</div>
-      <h1>Built for results—not trends.</h1>
-      <p class="muted">We follow Mobility → Stability → Strength so you move, feel, and perform better.</p>
+  <!-- Header (same everywhere, with aria-current here) -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <img src="logo-mark.png" alt="Topp Shape" class="brand-logo" />
+        <span>Topp Shape</span>
+      </a>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="programs.html" aria-current="page">Programs</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="athletes.html">Athletes</a>
+        <a href="blueprint.html">Blueprint</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://instagram.com/topp95" target="_blank" rel="noopener">Trey’s IG</a>
+      </nav>
+      <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
     </div>
-  </section>
+  </header>
 
-  <section class="section">
-    <div class="container grid grid-3">
-      <div class="surface card price">
-        <h2>6-Week Jumpstart</h2>
-        <!-- price hidden by CSS -->
-        <p class="muted">Our entry program. Fast results, build trust, set your long-term plan.</p>
-        <ul class="checks">
-          <li>Movement & goal assessment</li>
-          <li>Custom plan (in-person or online)</li>
-          <li>Nutrition basics & habit tracking</li>
-        </ul>
-        <a class="btn btn--primary" href="blueprint.html">Start Here</a>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Programs</div>
+        <h1>Built for results—not trends.</h1>
+        <p class="muted">We follow Mobility → Stability → Strength so you move, feel, and perform better.</p>
       </div>
+    </section>
 
-      <div class="surface card price">
-        <h2>Personal Training</h2>
-        <!-- price grid hidden by CSS -->
-        <p class="muted">Technique-first coaching tailored to you (1×, 2×, or 3× weekly).</p>
-        <a class="btn btn--outline" href="contact.html">Book a Consult</a>
+    <section class="section">
+      <div class="container grid grid-3">
+        <div class="surface card price">
+          <h2>6-Week Jumpstart</h2>
+          <p class="muted">Entry program. Fast results, build trust, set your long-term plan.</p>
+          <ul class="checks">
+            <li>Movement & goal assessment</li>
+            <li>Custom plan (in-person or online)</li>
+            <li>Nutrition basics & habit tracking</li>
+          </ul>
+          <a class="btn btn--primary" href="blueprint.html">Start Here</a>
+        </div>
+
+        <div class="surface card price">
+          <h2>Personal Training</h2>
+          <p class="muted">Technique-first coaching tailored to you (1×, 2×, or 3× weekly).</p>
+          <a class="btn btn--outline" href="contact.html">Book a Consult</a>
+        </div>
+
+        <div class="surface card price">
+          <h2>Group Classes</h2>
+          <p class="muted">45-minute specialty groups: Youth · Women’s · Men’s · Seniors.</p>
+          <ul class="checks">
+            <li>Coached strength & conditioning</li>
+            <li>Upsell: nutrition coaching</li>
+          </ul>
+          <a class="btn btn--outline" href="contact.html">Join a Class</a>
+        </div>
       </div>
+    </section>
 
-      <div class="surface card price">
-        <h2>Group Classes</h2>
-        <!-- price hidden by CSS -->
-        <p class="muted">45-minute specialty groups: Youth · Women’s · Men’s · Seniors.</p>
-        <ul class="checks">
-          <li>Coached strength & conditioning</li>
-          <li>Upsell: nutrition coaching</li>
-        </ul>
-        <a class="btn btn--outline" href="contact.html">Join a Class</a>
+    <section class="section">
+      <div class="container grid grid-3">
+        <div class="surface card">
+          <h2>Online Coaching</h2>
+          <p class="muted">Replicates our in-studio process virtually.</p>
+          <ul class="checks">
+            <li>Custom training + nutrition</li>
+            <li>Daily habits & weekly check-ins</li>
+          </ul>
+          <a class="btn btn--outline" href="blueprint.html">Get Your Plan</a>
+        </div>
+        <div class="surface card">
+          <h2>Nutrition Coaching</h2>
+          <p class="muted">Add-on to any service for better, faster results.</p>
+          <ul class="checks">
+            <li>Targets for calories & protein</li>
+            <li>Adjustments as you progress</li>
+          </ul>
+          <a class="btn btn--outline" href="contact.html">Ask About Nutrition</a>
+        </div>
+        <div class="surface card">
+          <h2>The Topp Shape Method</h2>
+          <p class="muted"><strong>Prime → Protect → Perform</strong> — fix mobility, build stability, then drive strength, speed, and power.</p>
+          <a class="btn btn--primary" href="blueprint.html">See How It Works</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="muted">© <span id="year"></span> Topp Shape</div>
+      <div class="footer-nav">
+        <a href="programs.html" aria-current="page">Programs</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="athletes.html">Athletes</a>
+        <a href="blueprint.html">Blueprint</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
-  </section>
-
-  <section class="section">
-    <div class="container grid grid-3">
-      <div class="surface card">
-        <h2>Online Coaching</h2>
-        <p class="muted">Replicates our in-studio process virtually.</p>
-        <ul class="checks">
-          <li>Custom training + nutrition</li>
-          <li>Daily habits & weekly check-ins</li>
-        </ul>
-        <a class="btn btn--outline" href="blueprint.html">Get Your Plan</a>
-      </div>
-      <div class="surface card">
-        <h2>Nutrition Coaching</h2>
-        <p class="muted">Add-on to any service for better, faster results.</p>
-        <ul class="checks">
-          <li>Targets for calories & protein</li>
-          <li>Adjustments as you progress</li>
-        </ul>
-        <a class="btn btn--outline" href="contact.html">Ask About Nutrition</a>
-      </div>
-      <div class="surface card">
-        <h2>The Topp Shape Method</h2>
-        <p class="muted"><strong>Prime → Protect → Perform</strong><br/>Fix mobility, build stability, then drive strength, speed, and power.</p>
-        <a class="btn btn--primary" href="blueprint.html">See How It Works</a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="muted">© <span id="year"></span> Topp Shape</div>
-    <div class="footer-nav">
-      <a href="programs.html" aria-current="page">Programs</a>
-      <a href="coaches.html">Coaches</a>
-      <a href="athletes.html">Athletes</a>
-      <a href="blueprint.html">Blueprint</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
-<script src="script.js"></script>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  <script src="script.js"></script>
 </body>
 </html>
