@@ -5,110 +5,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Get Your Blueprint — Topp Shape</title>
   <meta name="description" content="Start with the Topp Shape Blueprint: a personalized plan built on Mobility → Stability → Strength." />
-  <link rel="stylesheet" href="style.css?v=6" />
+  <link rel="stylesheet" href="style.css?v=7" />
   <link rel="icon" href="logo-mark.png" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container navbar">
-    <a class="brand" href="index.html"><img src="logo-mark.png" class="brand-logo" alt="Topp Shape"/><span>Topp Shape</span></a>
-    <nav class="nav" data-nav>
-      <a href="index.html">Home</a>
-      <a href="programs.html">Programs</a>
-      <a href="coaches.html">Coaches</a>
-      <a href="athletes.html">Athletes</a>
-      <a href="blueprint.html" aria-current="page">Blueprint</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
-  </div>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="container">
-      <div class="eyebrow">The Topp Shape Method</div>
-      <h1>Your Blueprint to Lasting Results</h1>
-      <p class="muted">Our 3-step process fixes root causes first—then builds strength that lasts.</p>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <img src="logo-mark.png" alt="Topp Shape" class="brand-logo" />
+        <span>Topp Shape</span>
+      </a>
+      <nav class="nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="athletes.html">Athletes</a>
+        <a href="blueprint.html" aria-current="page">Blueprint</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://instagram.com/topp95" target="_blank" rel="noopener">Trey’s IG</a>
+      </nav>
+      <button class="burger" data-nav-toggle aria-label="Toggle navigation"><span></span></button>
     </div>
-  </section>
+  </header>
 
-  <section class="section">
-    <div class="container grid grid-3">
-      <div class="surface card"><div class="badge">1</div><h2>Prime</h2><p class="muted">Unlock mobility so you can move freely and reduce pain.</p></div>
-      <div class="surface card"><div class="badge">2</div><h2>Protect</h2><p class="muted">Build stability and bulletproof weak points to prevent injuries.</p></div>
-      <div class="surface card"><div class="badge">3</div><h2>Perform</h2><p class="muted">Gain strength, speed, and power for fat loss, athletics, and life.</p></div>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">The Topp Shape Method</div>
+        <h1>Your Blueprint to Lasting Results</h1>
+        <p class="muted">Our 3-step process fixes root causes first—then builds strength that lasts.</p>
+      </div>
+    </section>
 
-  <section class="section">
-    <div class="container grid" style="grid-template-columns:1.2fr .8fr;gap:18px">
-      <form id="blueprint-form" class="surface card">
-        <h2>Get Your Blueprint</h2>
-        <p class="muted" style="margin-bottom:12px">Tell us about you. We’ll send a custom plan and next steps.</p>
+    <section class="section">
+      <div class="container grid grid-3">
+        <div class="surface card"><div class="badge">1</div><h2>Prime</h2><p class="muted">Unlock mobility so you can move freely and reduce pain.</p></div>
+        <div class="surface card"><div class="badge">2</div><h2>Protect</h2><p class="muted">Build stability and bulletproof weak points to prevent injuries.</p></div>
+        <div class="surface card"><div class="badge">3</div><h2>Perform</h2><p class="muted">Gain strength, speed, and power for fat loss, athletics, and life.</p></div>
+      </div>
+    </section>
 
-        <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
-          <div><label for="bp-name"><strong>Name</strong></label><input id="bp-name" name="name" required /></div>
-          <div><label for="bp-email"><strong>Email</strong></label><input id="bp-email" type="email" name="email" required /></div>
-        </div>
+    <section class="section">
+      <div class="container grid" style="grid-template-columns:1.2fr .8fr;gap:18px">
+        <form id="blueprint-form" class="surface card">
+          <h2>Get Your Blueprint</h2>
+          <p class="muted" style="margin-bottom:12px">Tell us about you. We’ll send a custom plan and next steps.</p>
 
-        <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
-          <div><label for="bp-phone"><strong>Phone (optional)</strong></label><input id="bp-phone" name="phone" /></div>
-          <div><label for="bp-goal"><strong>Main Goal</strong></label>
-            <select id="bp-goal" name="goal">
-              <option>Fat Loss</option><option>Get Stronger</option><option>Move Without Pain</option><option>Athletic Performance</option>
+          <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
+            <div><label for="bp-name"><strong>Name</strong></label><input id="bp-name" name="name" required /></div>
+            <div><label for="bp-email"><strong>Email</strong></label><input id="bp-email" type="email" name="email" required /></div>
+          </div>
+
+          <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
+            <div><label for="bp-phone"><strong>Phone (optional)</strong></label><input id="bp-phone" name="phone" /></div>
+            <div><label for="bp-goal"><strong>Main Goal</strong></label>
+              <select id="bp-goal" name="goal">
+                <option>Fat Loss</option><option>Get Stronger</option><option>Move Without Pain</option><option>Athletic Performance</option>
+              </select>
+            </div>
+          </div>
+
+          <div><label for="bp-service"><strong>Interested In</strong></label>
+            <select id="bp-service" name="service">
+              <option>6-Week Jumpstart</option><option>Personal Training</option><option>Group Classes</option><option>Online Coaching</option><option>Nutrition Coaching</option>
             </select>
           </div>
+
+          <div><label for="bp-notes"><strong>Anything we should know?</strong></label>
+            <textarea id="bp-notes" name="notes" rows="5" placeholder="Injuries, schedule, timeline, etc."></textarea>
+          </div>
+
+          <div class="btn-row" style="margin-top:10px">
+            <button class="btn btn--primary" type="submit">Send My Blueprint</button>
+            <a class="btn btn--outline" href="programs.html">See Programs</a>
+          </div>
+
+          <input type="hidden" name="_subject" value="Blueprint Request" />
+        </form>
+
+        <div class="surface card">
+          <h3>Why start here?</h3>
+          <ul class="checks">
+            <li>Clear entry: <strong>6-Week Jumpstart</strong></li>
+            <li>Then choose: PT, Group, or Online</li>
+            <li>Upsell: Nutrition Coaching</li>
+            <li>Works for youth, athletes, adults, seniors</li>
+          </ul>
+          <div class="divider"></div>
+          <h3>Prefer to talk?</h3>
+          <p class="muted">Email <a href="mailto:toppshape1332@gmail.com">toppshape1332@gmail.com</a><br/>or call <a href="tel:16189674755">(618) 967-4755</a></p>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <div><label for="bp-service"><strong>Interested In</strong></label>
-          <select id="bp-service" name="service">
-            <option>6-Week Jumpstart</option><option>Personal Training</option><option>Group Classes</option><option>Online Coaching</option><option>Nutrition Coaching</option>
-          </select>
-        </div>
-
-        <div><label for="bp-notes"><strong>Anything we should know?</strong></label>
-          <textarea id="bp-notes" name="notes" rows="5" placeholder="Injuries, schedule, timeline, etc."></textarea>
-        </div>
-
-        <div class="btn-row" style="margin-top:10px">
-          <button class="btn btn--primary" type="submit">Send My Blueprint</button>
-          <a class="btn btn--outline" href="programs.html">See Programs</a>
-        </div>
-
-        <input type="hidden" name="_subject" value="Blueprint Request" />
-      </form>
-
-      <div class="surface card">
-        <h3>Why start here?</h3>
-        <ul class="checks">
-          <li>Clear entry: <strong>6-Week Jumpstart</strong></li>
-          <li>Then choose: PT, Group, or Online</li>
-          <li>Upsell: Nutrition Coaching</li>
-          <li>Works for youth, athletes, adults, seniors</li>
-        </ul>
-        <div class="divider"></div>
-        <h3>Prefer to talk?</h3>
-        <p class="muted">Email <a href="mailto:toppshape1332@gmail.com">toppshape1332@gmail.com</a><br/>
-        or call <a href="tel:16189674755">(618) 967-4755</a></p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="muted">© <span id="year"></span> Topp Shape</div>
+      <div class="footer-nav">
+        <a href="programs.html">Programs</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="athletes.html">Athletes</a>
+        <a href="blueprint.html" aria-current="page">Blueprint</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="muted">© <span id="year"></span> Topp Shape</div>
-    <div class="footer-nav">
-      <a href="programs.html">Programs</a>
-      <a href="coaches.html">Coaches</a>
-      <a href="athletes.html">Athletes</a>
-      <a href="blueprint.html" aria-current="page">Blueprint</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
-<script src="script.js"></script>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  <script src="script.js"></script>
 </body>
 </html>
