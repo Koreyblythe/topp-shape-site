@@ -1,24 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile nav
+  const year = document.getElementById('year');
+  if (year) year.textContent = String(new Date().getFullYear());
+
   const burger = document.querySelector('[data-nav-toggle]');
   const nav = document.querySelector('[data-nav]');
   if (burger && nav) {
     burger.addEventListener('click', () => nav.classList.toggle('open'));
-    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => nav.classList.remove('open')));
   }
 
-  // Helper to POST to Formspree (replace ID when ready)
-  async function postForm(form, endpoint){
+  async function postForm(form, endpoint) {
     const data = new FormData(form);
-    const res = await fetch(endpoint, { method:'POST', body:data, headers:{Accept:'application/json'} });
-    if(res.ok){ alert('Thanks! We’ll get back to you ASAP.'); form.reset(); }
-    else{ alert('Something went wrong. Please try again or email toppshape1332@gmail.com'); }
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      body: data,
+      headers: { Accept: 'application/json' }
+    });
+
+    if (res.ok) {
+      alert('Thanks! Your request has been sent.');
+      form.reset();
+      return;
+    }
+
+    alert('Unable to send right now. Please email toppshape1332@gmail.com.');
   }
-  const FORMSPREE = 'https://formspree.io/f/YOUR_FORMSPREE_ID'; // TODO: set
 
-  const contact = document.querySelector('#contact-form');
-  if (contact) contact.addEventListener('submit', e => { e.preventDefault(); postForm(contact, FORMSPREE); });
+  const FORMSPREE = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
 
-  const bp = document.querySelector('#blueprint-form');
-  if (bp) bp.addEventListener('submit', e => { e.preventDefault(); postForm(bp, FORMSPREE); });
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', event => {
+      event.preventDefault();
+      postForm(contactForm, FORMSPREE);
+    });
+  }
+
+  const blueprintForm = document.getElementById('blueprint-form');
+  if (blueprintForm) {
+    blueprintForm.addEventListener('submit', event => {
+      event.preventDefault();
+      postForm(blueprintForm, FORMSPREE);
+    });
+  }
 });
